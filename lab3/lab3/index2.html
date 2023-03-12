@@ -7,8 +7,38 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
 
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            grid-area: header;
+            height: 10vh;
+            background: #2196F3;
+            color: yellow;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+
+
         body {
             min-height: 100vh;
+            width: 100vw;
+            height: 100vh;
+            grid-template-areas:
+                'header header header'
+                'menu main aside'
+                'footer footer footer';
+            grid-gap: 10px;
+            background-color: rgb(6, 4, 116);
+
+
         }
 
         * {
@@ -25,18 +55,7 @@
             font-style: normal;
         }
 
-        header {
-            grid-area: header;
-            height: 10vh;
-            background: purple;
-            color: white;
-            top: 0;
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
 
         footer {
             height: 5vh;
