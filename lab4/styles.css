@@ -1,0 +1,215 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    /*tipo*/
+    color: #394955(18, 184, 54, 0.712);
+}
+
+h3 {
+    font-size: 2.0rem;
+    font-weight: 200;
+    text-shadow: 0 0 1em hsla(150, 96%, 44%, 0.541),
+        0 0 0.125em hsla(150, 96%, 44%, 0.541),
+        -0.25em -0.125em 0.125em hsla(78, 87%, 49%, 0.685),
+        0.25em 0.125em 0.125em hsla(175, 80%, 43%, 0.5);
+
+}
+
+h2 {
+    font-size: 2.0rem;
+    font-weight: 200;
+    text-shadow: 0 0 1em hsla(150, 96%, 44%, 0.541),
+        0 0 0.125em hsla(150, 96%, 44%, 0.541),
+        -0.25em -0.125em 0.125em hsla(78, 87%, 49%, 0.685),
+        0.25em 0.125em 0.125em hsla(175, 80%, 43%, 0.5);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-shadow: 0 0 1em hsla(150, 82%, 29%, 0.548),
+        0 0 0.125em hsla(135, 75%, 42%, 0.5),
+        -0.25em -0.125em 0.125em hsla(212, 74%, 39%, 0.125),
+        0.25em 0.125em 0.125em hsla(192, 86%, 48%, 0.25);
+}
+
+main {
+    width: 90%;
+    max-width: 70rem;
+}
+
+p {
+    font-size: 1.50rem;
+    max-width: 80ch;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+}
+
+
+.hero {
+    height: 80vh;
+    max-height: 40rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #319FDA;
+}
+
+nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+nav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #00ABE4;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #319FDA;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(160, 150, 150, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #00ABE4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+tbody td {
+    padding: 20px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #00ABE4;
+    color: #fff;
+}
+
+.field_set {
+    border-color: #00ABE4;
+    border-style: solid;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+/*
+img {
+    border-radius: 50%;
+    animation-name: roda;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes roda {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes roda-encolhe {
+    0% {
+        transform: rotate(0deg);
+        width: 200px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        width: 100px;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 200px;
+    }
+}
+*/
+.image {
+    perspective: 3000px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+}
+
+.image img {
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0, 0, 0, 0.4);
+    transition: all .4s;
+    transform-style: preserve-3d;
+}
+
+.image:hover img {
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+.italico {
+    font-style: italic;
+}
+
+div#imagemRodada {
+    transform: rotate(20deg);
+}
